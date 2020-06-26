@@ -3,32 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>DistanceShopUA</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <style>
+    <style class="styleBG">
       body {
-        background: linear-gradient(143.13deg, #d9b846 15.93%, #be8a02 83.64%);
+        background-image: url(img/BGrun.png);
+        background-position: -460px 20px;
+        background-repeat: no-repeat;
+        background-size: 1100px;
       }
     </style>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
-      <img class="logo" src="img/Logo.png" alt="Лого дистансшоп" />
-
-      
-
-      <ul class="menu">
-        <li><a href="">Главная</a></li>
-        <li><a href="">Товары</a></li>
-        <li><a href="">О нас</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
+      <div class="call__button">
+        <img class="icon__phone" src="img/icon phone.svg" alt="iconPhone" />
+        <span>Позвоноить:</span> <br />
+        <span><a href="tel:+380987201014">+380 (98) 720 10 14</a></span>
+      </div>
     </header>
+    <!-- info Distance -->
+    <div class="infoDistance">
+      <div class="infoTop"></div>
+      <img
+        class="logoDistanceShop"
+        src="img/logoDistanceShop.svg"
+        alt="logoDistanceShop"
+      />
+      <h1>
+        DistanceShopUA
+      </h1>
+      <p>Интернет-магазин спортивной оригинальной одежды и обуви.</p>
+    </div>
+    <!-- info Pinterest -->
+    <a
+      class="infoPinterest"
+      href="https://www.pinterest.com/distanceshop/boards/"
+    >
+      <div class="infoTopPinterest"></div>
+      <img
+        class="logoPinterest"
+        src="img/logoPinterest.svg"
+        alt="logoPinterest"
+      />
+      <img src="img/iconTouch.svg" alt="iconTouch" class="iconTouch" />
+      <img
+        src="img/buttonForPinterest.svg"
+        alt="buttonpinterest"
+        class="buttonForPinterest"
+      />
+      <h1>
+        Pinterest
+      </h1>
+      <p>Весь наш ассортимент можно посмотреть на сайте Pinterest.</p>
+    </a>
+    <!-- FOOTER -->
+    <footer>
+      <h2>Для связи:</h2>
+      <a
+        href="https://api.whatsapp.com/send?phone=380987201014"
+        class="buttonWhatsApp"
+        ><img src="img/ButtonWhatsApp.svg" alt="WhatsApp"
+      /></a>
+      <a href="https://t.me/distanceshopua" class="buttonTelegram"
+        ><img src="img/ButtonTelegram.svg" alt="Telegram"
+      /></a>
+      <a href="viber://add?number=380987201014" class="buttonViber"
+        ><img src="img/ButtonViber.svg" alt="Viber"
+      /></a>
+    </footer>
 
-    <img class="fitnessWomanPrev" src="img/fitness_woman_prev.svg" alt="тетя" />
   </body>
 </html>
+
