@@ -5,17 +5,15 @@
   padding: 0;
 }
 
-body {
-  position: fixed; /* тут параметры чтоб работал runBG */
-  width: 100%;
-  height: 140%;
-}
-
 html {
   /* стиль для всего html */
   font-family: Montserrat;
   font-weight: 500;
   background-color: #b5b5b5;
+  background-image: url(/img/BGrun.png);
+  background-repeat: no-repeat;
+  background-position: -28.75em 1.25em;
+  background-size: 68.75em;
 }
 
 /* **************************************
@@ -99,7 +97,7 @@ p {
 }
 
 .infoDistance {
- /* основной блок Distance */
+  /* основной блок Distance */
   position: relative;
   width: 18.563em;
   height: 7.131em;
@@ -169,8 +167,6 @@ p {
   width: 18.563em;
   height: 7.131em;
   margin: 29px auto;
-  
-  
 
   background: rgba(219, 219, 219, 0.9);
   box-shadow: 0px 0px 11.8542px rgba(0, 0, 0, 0.2);
@@ -241,10 +237,8 @@ h2 {
 }
 /* если ширина больше 440 то выполняется этот медиа */
 @media screen and (min-width: 440px) {
-  body {
-    background-position: center;
-    background-size: cover;
+  html {
+    background-size: 50em;
+    background-position: 50% 3.25em;
   }
 }
-
-
