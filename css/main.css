@@ -1,51 +1,250 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap); /* импорт шрифта */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
-  margin: 0;
+  margin: 0; /* сбрасываем отступы для всего */
   padding: 0;
 }
+
 body {
-  background: linear-gradient(143.13deg, #d9b846 15.93%, #be8a02 83.64%);
+  position: fixed; /* тут параметры чтоб работал runBG */
+  width: 100%;
+  height: 140%;
 }
 
-a {
-  font-family: "montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #000000;
-  text-decoration: none;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px, 10%;
-}
-.logo {
-  position: absolute;
-  width: 84.92px;
-  height: 84.92px;
-  left: 374px;
-  top: 18px;
-}
-.disntanceshopua {
-  position: absolute;
-  width: 212px;
-  height: 29px;
-  left: 474px;
-  top: 30px;
+html {
+  /* стиль для всего html */
   font-family: Montserrat;
+  font-weight: 500;
+  background-color: #b5b5b5;
+}
+
+/* **************************************
+*************Header*******************
+************************************** */
+header {
+  position: relative; /* положение внутри собстенно самой страницы?? */
+  width: 19.467em;
+  height: 2.794em;
+  margin: 9px auto;
+}
+
+.call__button {
+  position: absolute; /* положение кнопки звонка внутри header */
+  left: 43.58%;
+  right: 1.14%;
+  top: 1.91%;
+  bottom: 0%; /* магнит к правой стороне родителя header */
+
+  background: rgba(219, 219, 219, 0.9); /* стиль кнопки звонка */
+  box-shadow: 0px 0px 5.92708px rgba(0, 0, 0, 0.4);
+  filter: blur(0.296354px);
+  border-radius: 13.3359px;
+}
+.icon__phone {
+  position: relative; /* обращаемся к иконке телефона для позиционирования внутри call__button  */
+  top: 6.3px;
+  left: 5.3px;
+}
+span {
+  font-size: 13.3359px; /* обращаемся ко всем спанам цель: надпись "позвонить" и размер шрифта для всех спанов */
+  position: relative;
+  bottom: 14px;
+  left: 7px;
+}
+a {
+  text-decoration: none; /* убираем стиль ссылки номера */
+  color: #333;
+}
+span:last-child {
+  font-weight: 700; /* обращаемся к последнему спану (текст телефон) для жирности текста */
+  left: 37px;
+}
+
+/* **************************************
+*************Тело инфо DistanceShop*******
+************************************** */
+
+h1 {
+  font-family: Montserrat; /* задаем для всех заголовков h1 шрифт (2 h1 - плохо для ревелантости гугл, но нам же пох на это? */
   font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-
-  color: #000000;
-
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  font-size: 21.3375px;
+  line-height: 133.4%;
 }
-.fitnessWomanPrev {
-  position: fixed;
-  margin-top: 10%;
-  margin-left: 50%;
+p {
+  font-family: Montserrat; /* задаем для всех параграфов p шрифт */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18.9667px;
+  line-height: 110%;
+
+  letter-spacing: -0.03em;
 }
+
+.logoDistanceShop {
+  position: relative; /* позиционируем logoDistance в родителе infoDistance */
+  width: 34px;
+  height: 34px;
+  left: 6.22px;
+  top: 1px;
+}
+
+.infoTop {
+  position: absolute; /* "шапка" белая окна блока infoDistance*/
+  width: 297.54px;
+  height: 39.71px;
+
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 13.3359px 13.3359px 0px 0px;
+}
+
+.infoDistance {
+ /* основной блок Distance */
+  position: relative;
+  width: 18.563em;
+  height: 7.131em;
+  margin: 49px auto;
+
+  background: rgba(219, 219, 219, 0.9);
+  box-shadow: 0px 0px 11.8542px rgba(0, 0, 0, 0.2);
+  border-radius: 13.3359px;
+}
+
+.infoDistance > h1 {
+  position: absolute; /* обращаемся к h1 в классе infoDistance для позиционированния текста внути этого класса */
+  width: 185.81px;
+  height: 28.45px;
+  left: 44.5px;
+  top: 5.63px;
+}
+
+.infoDistance > p {
+  position: absolute; /* обращаемся к p в классе infoDistance для позиционированния текста внутри этого класса */
+  width: 270px;
+  height: 63px;
+  left: 11.74px;
+  top: 43.57px;
+}
+
+/* **************************************
+*************Тело инфо Pinterest*********
+************************************** */
+
+.logoPinterest {
+  /* позиционируем logoPinterest в родителе infoPinterest */
+  position: absolute;
+  width: 34.97px;
+  height: 34.97px;
+  left: 6.22px;
+  top: 2px;
+}
+.iconTouch {
+  /* иконка руки тач */
+  position: absolute;
+  left: 77%;
+  top: -2%;
+}
+
+.buttonForPinterest {
+  /* Кнопка-стрелка в блоке Pinterest */
+  position: absolute;
+  left: 89.44%;
+  top: 73.25%;
+}
+
+.infoTopPinterest {
+  /* "шапка" белая окна блока infoPinterest */
+  position: absolute;
+  width: 297.54px;
+  height: 39.71px;
+
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 13.3359px 13.3359px 0px 0px;
+}
+
+.infoPinterest {
+  /* основной блок Pinterest */
+  position: relative;
+  display: block; /* т.к. этот блок "a" т.е ссылка делаем его блочным этим параметром */
+  width: 18.563em;
+  height: 7.131em;
+  margin: 29px auto;
+  
+  
+
+  background: rgba(219, 219, 219, 0.9);
+  box-shadow: 0px 0px 11.8542px rgba(0, 0, 0, 0.2);
+  border-radius: 13.3359px;
+}
+
+.infoPinterest > h1 {
+  /* обращаемся к h1 в классе infoPinterest для позиционированния текста внути этого класса */
+  position: absolute;
+  width: 100.17px;
+  height: 28.45px;
+  left: 44.5px;
+  top: 5.63px;
+}
+
+.infoPinterest > p {
+  /* обращаемся к p в классе infoPinterest для позиционированния текста внутри этого класса */
+  position: absolute;
+  left: 3.78%;
+  right: 1.79%;
+  top: 38.44%;
+  bottom: 7.01%;
+}
+
+/* **************************************
+*************Footer*******************
+************************************** */
+
+footer {
+  /* блок футер (прозрачный) */
+  position: relative;
+  width: 19.652em;
+  height: 5.367em;
+  margin: 24px auto;
+}
+
+h2 {
+  /* "Для связи:" */
+  position: absolute;
+  left: 30.44%;
+  top: 0%;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21.3375px;
+  line-height: 26px;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3.8526px rgba(0, 0, 0, 0.88);
+}
+/* кнопки для месседжеров */
+.buttonWhatsApp {
+  position: absolute;
+  left: -1%;
+  top: 37.27%;
+}
+
+.buttonTelegram {
+  position: absolute;
+  left: 33.1%;
+  top: 37.27%;
+}
+
+.buttonViber {
+  position: absolute;
+  left: 67.6%;
+  top: 37.27%;
+}
+/* если ширина больше 440 то выполняется этот медиа */
+@media screen and (min-width: 440px) {
+  body {
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+
