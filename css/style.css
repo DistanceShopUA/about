@@ -35,7 +35,7 @@ header {
 
   background: rgba(219, 219, 219, 0.9); /* стиль кнопки звонка */
   box-shadow: 0px 0px 5.92708px rgba(0, 0, 0, 0.4);
-  filter: blur(0.296354px);
+ /* filter: blur(0.296354px); не корректно работает на ios10 и ниже */
   border-radius: 13.3359px;
 }
 .icon__phone {
