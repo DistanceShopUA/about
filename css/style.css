@@ -1,19 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* {
-  margin: 0; /* сбрасываем отступы для всего */
-  padding: 0;
+html {
+  background-image: linear-gradient(
+    154.45deg,
+    rgba(125, 125, 125, 0.45) 0.4%,
+    #868686 96.82%
+  );
+  min-height: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  user-select: none; /* запрещает выделение */
+  -webkit-tap-highlight-color: transparent; /* убирает обводку при тапе на кнопки (android) */
 }
 
-html {
-  /* стиль для всего html */
+body {
+  /* стиль для всего body */
   font-family: Montserrat;
   font-weight: 500;
-  background-color: #b5b5b5;
-  background-image: url("https://raw.githubusercontent.com/DistanceShopUA/About/master/img/bgrun.png");
-  background-repeat: no-repeat;
-  background-position: -28.75em 1.25em;
-  background-size: 68.75em;
+
+  background: url("/img/BGrun.png") 70% -40%/200% no-repeat; /* ширина-высота| размер | без повтора */
+  position: relative;
 }
 
 /* **************************************
@@ -35,9 +42,13 @@ header {
 
   background: rgba(219, 219, 219, 0.9); /* стиль кнопки звонка */
   box-shadow: 0px 0px 5.92708px rgba(0, 0, 0, 0.4);
- /* filter: blur(0.296354px); не корректно работает на ios10 и ниже */
+  /* filter: blur(0.296354px); не корректно работает на ios10 и ниже */
   border-radius: 13.3359px;
 }
+.call__button:active {
+  transform: scale(0.9); /* при нажатии уменьшаеться */
+}
+
 .icon__phone {
   position: relative; /* обращаемся к иконке телефона для позиционирования внутри call__button  */
   top: 6.3px;
@@ -84,13 +95,13 @@ p {
   width: 34px;
   height: 34px;
   left: 6.22px;
-  top: 1px;
+  top: 3px;
 }
 
 .infoTop {
   position: absolute; /* "шапка" белая окна блока infoDistance*/
-  width: 297.54px;
-  height: 39.71px;
+  width: 18.563em;
+  height: 2.482em;
 
   background: rgba(255, 255, 255, 0.7);
   border-radius: 13.3359px 13.3359px 0px 0px;
@@ -106,6 +117,9 @@ p {
   background: rgba(219, 219, 219, 0.9);
   box-shadow: 0px 0px 11.8542px rgba(0, 0, 0, 0.2);
   border-radius: 13.3359px;
+}
+.infoDistance:active {
+  transform: scale(0.95); /* при нажатии уменьшаеться */
 }
 
 .infoDistance > h1 {
@@ -134,7 +148,7 @@ p {
   width: 34.97px;
   height: 34.97px;
   left: 6.22px;
-  top: 2px;
+  top: 3px;
 }
 .iconTouch {
   /* иконка руки тач */
@@ -153,8 +167,8 @@ p {
 .infoTopPinterest {
   /* "шапка" белая окна блока infoPinterest */
   position: absolute;
-  width: 297.54px;
-  height: 39.71px;
+  width: 18.563em;
+  height: 2.482em;
 
   background: rgba(255, 255, 255, 0.7);
   border-radius: 13.3359px 13.3359px 0px 0px;
@@ -190,6 +204,9 @@ p {
   top: 38.44%;
   bottom: 7.01%;
 }
+.infoPinterest:active {
+  transform: scale(0.95); /* при нажатии уменьшаеться */
+}
 
 /* **************************************
 *************Footer*******************
@@ -223,22 +240,30 @@ h2 {
   left: -1%;
   top: 37.27%;
 }
-
+.buttonWhatsApp:active {
+  transform: scale(0.9); /* при нажатии уменьшаеться */
+}
 .buttonTelegram {
   position: absolute;
   left: 33.1%;
   top: 37.27%;
 }
-
+.buttonTelegram:active {
+  transform: scale(0.9); /* при нажатии уменьшаеться */
+}
 .buttonViber {
   position: absolute;
   left: 67.6%;
   top: 37.27%;
 }
+.buttonViber:active {
+  transform: scale(0.9); /* при нажатии уменьшаеться */
+}
+
 /* если ширина больше 440 то выполняется этот медиа */
 @media screen and (min-width: 440px) {
-  html {
-    background-size: 50em;
-    background-position: 50% 3.25em;
+  body {
+    background-size: 44em;
+    background-position: 40% -100%;
   }
 }
