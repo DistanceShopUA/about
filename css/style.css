@@ -19,7 +19,7 @@ body {
   font-family: Montserrat;
   font-weight: 500;
 
-  background: url("https://raw.githubusercontent.com/DistanceShopUA/About/master/img/bgrun.png") 70% -40%/200% no-repeat; /* ширина-высота| размер | без повтора */
+/*   background: url("https://raw.githubusercontent.com/DistanceShopUA/About/master/img/bgrun.png") 70% -40%/200% no-repeat; /* ширина-высота| размер | без повтора */ */
   position: relative;
 }
 
